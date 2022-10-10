@@ -1962,7 +1962,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: 50%;
-			text-align: center;
+			text-align: justify;
 			text-transform: uppercase;
 			display: block;
 			font-weight: 700;
@@ -2213,7 +2213,7 @@ input, select, textarea {
 
 	#intro {
 		padding-bottom: 8em;
-		text-align: center;
+		text-align: justify;
 	}
 
 		#intro p.style1 {
@@ -2257,7 +2257,7 @@ input, select, textarea {
 /* Highlights */
 
 	#highlights .highlight {
-		text-align: center;
+		text-align: justify;
 	}
 
 		#highlights .highlight h3 {
