@@ -1962,7 +1962,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: 50%;
-			text-align: justify;
+			text-align: center;
 			text-transform: uppercase;
 			display: block;
 			font-weight: 700;
