@@ -230,7 +230,7 @@
 									<div>
 									    <img src="images/polarimeter_interior.jpg" width="300" height="400" align="left" style="margin: 0px 10px 0px 0px;" alt="" />
 									</div>
-									<p>My first research experience was in Dr. Saffman's lab, which focused on approaches to quantum computing using
+									<p>My first research experience was in Dr. Saffman's lab at UW - Madison, which focused on approaches to quantum computing using
 										neutral atoms. The most substantial but rewarding project I worked on was developing a device and an associated procedure
 										to align laser beam polarization to the optical fiber axis in birefringent fibers. Single-mode
 										fibers are ubiquitous in optics labs (thanks to their ability to reduce system complexity), but are
@@ -242,10 +242,47 @@
 										The difference of these refractive indicies is known as birefringence. How this birefringence can be used
 										to maintain polarization alignment is complicated (and fascinating!), but is broadly explained by the fact that
 										birefringence induces a well-defined phase delay for the two orthogonal states over the length of the fiber.</p>
-									<p>This alignment is good but not perfect, and is further complicated by the fact that these fibers
-									are often connectorized, containing a key-hole output at one end. The manufacturing process for
-									these fibers </p>
-										
+									<p>The alignment provided by these birefringent fibers is good but not perfect, and is further complicated by the fact that these fibers
+									are often connectorized, featuring a key-hole output at one end. If not carefully executed, the process to attach (usually glue) this key-hole
+									onto the fiber can create additional sources of stress which substantially reduce the effectiveness of the birefringent design.
+										This misalignment can be corrected for by once again inducing a well-defined
+										perturbation onto the fiber. Several methods exist for this purpose, including
+										the famous elasto-optic (E-O) method, but many are too complicated or carry too
+										high of a potential to damage the fiber to be practical.
+									</p>
+									<p>In collaboration with Dr. Matthew Ebert, I designed and implemented a novel polarization alignment
+										scheme which is safe, systematic, and simple to perform. 
+									
+										This additional
+									source of birefringence can be mitigated by once again in-
+									ducing a well-defined stress, or perturbation to the fiber. One
+									common but problematic method of producing this strain is
+									via the elasto-optic (also known as fiber-squeeze) method,
+									originally outlined in Carrara, Kim & Shaw (1986)2. Yet this
+									method requires precise engineering and substantial prepara-
+									tion to create a stress that will not damage the fiber. Further,
+									the stress induced on a fiber by such a device is relatively dif-
+									ficult to characterize, potentially limiting the ability of this
+									procedure to be systematic.
+									In this paper, we describe a safe, systematic, and straight-
+									forward methodology to align the input polarization to the
+									fiber. Using a polarimeter and a frequency scan, we create a
+									controllable signal that is proportional to the polarization mis-
+									alignment. T
+									The polarization angle of the incident light, theta ( f ) can be
+									determined from the polarimeter signal as shown above. The
+									fiber output polarization angle is dependent on the frequency
+									of the light, f due to the birefringence of the PM fiber. Pre-
+									cise polarization alignment is then possible by ramping the
+									frequency of the input laser (which will cause periodic spikes
+									in deltaP) and then decoupling the power from the frequency.
+									This is practically done by iteratively adjusting the input and
+									output polarization until the normalized differential signal ∆P
+									is flat (as it was before the frequency ramping), and the sum
+									Px + Py is maximal. Since deltaP is proportional to the polariza-
+									tion misalignment, we have therefore ensured that the polar-
+									ization is maintained at the output of the fiber (regardless of
+									the frequency), while retaining optimal transmission power</p>
 									<div>
 									    <img src="images/optical_setup.PNG" width="524" height="320" align="right" style="margin: 0px 0px 0px 10px;" alt="" />
 									</div>
