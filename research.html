@@ -236,7 +236,7 @@
 										fibers are ubiquitous in optics labs (thanks to their ability to reduce system complexity), but are
 										subject to a variety of environmental stresses (e.g., bending, heating). These stresses induce unwanted
 										drifts in the polarization state of the light traveling through the fiber over time, which renders the large
-										optical set-ups needed for quantum experiments useless until realignment is achieved. Birefringent polarization-maintaining
+										optical set-ups needed for quantum experiments useless until realignment is achieved. Birefringent polarization-maintaining (PM)
 										fibers are able to mitigate these effects and maintain the input linear polarization state
 										due to the presence of two orthogonal stress rods with differing refractive indicies internal to the fiber. 
 										The difference of these refractive indicies is known as birefringence. How this birefringence can be used
@@ -250,6 +250,9 @@
 										the famous elasto-optic (E-O) method, but many are too complicated or carry too
 										high of a potential to damage the fiber to be practical.
 									</p>
+									<div>
+									    <img src="images/optical_setup.PNG" width="524" height="320" align="right" style="margin: 0px 0px 0px 10px;" alt="" />
+									</div>
 									<p>In collaboration with Dr. Matthew Ebert, Dr. Trent Graham, and Dr. Mark Saffman,
 										I designed and implemented a novel polarization alignment
 										scheme which is safe, systematic, and simple to perform. Briefly, we fabricate
@@ -265,54 +268,35 @@
 										angle is dependent on the 
 										input laser's frequency (due to the fiber's birefringence), it
 										becomes possible to decouple the power from the frequency using a frequency ramping procedure.
-										Once the frequency scan begins, a periodic 'spike'-like signal is output by the polarimeter,
-										and one can flatten and minimize this signal via iterative adjustment of the input
-										and output polarization (using the polarimeter). Flatness indicates that the differential signal is no
-										longer frequency dependent and 
-										by ramping
-										the laser's frequency (which creates periodic spikes in the differential signal),
-										it becomes possible to decouple the power from the frequency 
-										by iteratively adjusting the input and
-										output polarization until the normalized differential signal ∆P
-									is flat (as it was before the frequency ramping), and the sum
-									Px + Py is maximal
-										I built 
+										This is because once the frequency scan begins, a periodic 'spike'-like signal is output
+										by the polarimeter.
+										One can flatten this signal via iterative adjustment of the input
+										and output polarization (using the polarimeter) while also ensuring that the
+										sum of the power in each polarization mode is maximal. A flat signal indicates that the power difference
+										between both modes is no
+										longer frequency-dependent (i.e., the polarization state is decoupled fro the frequency).
+										Polarization alignment is guarenteed to be maintained throughout the fiber in this case
+										since it is directly proportional to the now-flattened differential signal, while
+										maximal transmission is retained. I built 
 										the polarimeter using laboratory optics and custom-machined parts, but
 										any polarimeter which separates the orthogonal components of linearly polarized  
-										light works.
+										light will work for this procedure (see Figures to the left).</p>
+										
+										<p>As one can see, the perturbation required for our alignment
+									procedure is simply a frequency scan, which presents no real stress on the fiber.
+									Additionally, the method is repeatable and easy to perform as the frequency ramping
+									is over some well-defined range and all of the necessary optical components are 
+									readily present in most laboratories. We also found that introducing a quarter waveplate
+									(QWP) greatly reduced the polarization drift over time, which we quantified by running a 
+									series of experiments. A schematic of our optical set-up prior to feeding the light into
+											the polarimeter is shown on the right.
+									</p>
 										
 									
-									In this paper, we describe a safe, systematic, and straight-
-									forward methodology to align the input polarization to the
-									fiber. Using a polarimeter and a frequency scan, we create a
-									controllable signal that is proportional to the polarization mis-
-									alignment. T
-									The polarization angle of the incident light, theta ( f ) can be
-									determined from the polarimeter signal as shown above. The
-									fiber output polarization angle is dependent on the frequency
-									of the light, f due to the birefringence of the PM fiber. Pre-
-									cise polarization alignment is then possible by ramping the
-									frequency of the input laser (which will cause periodic spikes
-									in deltaP) and then decoupling the power from the frequency.
-									This is practically done by iteratively adjusting the input and
-									output polarization until the normalized differential signal ∆P
-									is flat (as it was before the frequency ramping), and the sum
-									Px + Py is maximal. Since deltaP is proportional to the polariza-
-									tion misalignment, we have therefore ensured that the polar-
-									ization is maintained at the output of the fiber (regardless of
-									the frequency), while retaining optimal transmission power</p>
-									<div>
-									    <img src="images/optical_setup.PNG" width="524" height="320" align="right" style="margin: 0px 0px 0px 10px;" alt="" />
-									</div>
-									<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-									ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-									eget quam rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus
-									eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis
-									tincidunt felis sagittis eget. Donec elementum ligula dignissim sem pulvinar non semper
-									odio eleifend. Duis commodo fringilla commodo. Aliquam erat volutpat. Vestibulum
-									facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-									tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-									posuere cubilia.</p>
+
+									<p>In order test the alignment stability and sensitivity associated with
+										this method, we induce an external thermal stress on an OZ Optics
+										PM fiber and measure the resultant polarization drift. Particularly, </p>
 									<div>
 									    <img src="images/combinedOZ_var_drift.png" width="400" height="500" align="left" style="margin: 0px 10px 0px 0px;" alt="" />
 									</div>
