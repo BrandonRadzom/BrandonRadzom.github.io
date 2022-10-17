@@ -250,20 +250,38 @@
 										the famous elasto-optic (E-O) method, but many are too complicated or carry too
 										high of a potential to damage the fiber to be practical.
 									</p>
-									<p>In collaboration with Dr. Matthew Ebert, I designed and implemented a novel polarization alignment
-										scheme which is safe, systematic, and simple to perform. 
+									<p>In collaboration with Dr. Matthew Ebert, Dr. Trent Graham, and Dr. Mark Saffman,
+										I designed and implemented a novel polarization alignment
+										scheme which is safe, systematic, and simple to perform. Briefly, we fabricate
+										a controllable signal that is 
+										proportional to the polarization misalignment and we manipulate
+										the light using a polarimeter until alignment is achieved.
+										More specifically, we attach the fiber to a polarimeter
+										that outputs a real-time 'differential signal' which is proportional
+										to the difference in the power between the two orthogonal polarization modes
+										(but normalized to the total power).
+										This voltage signal yields the polarization angle
+										of the light incident to the fiber (via a cosine relation). Since the output
+										angle is dependent on the 
+										input laser's frequency (due to the fiber's birefringence), it
+										becomes possible to decouple the power from the frequency using a frequency ramping procedure.
+										Once the frequency scan begins, a periodic 'spike'-like signal is output by the polarimeter,
+										and one can flatten and minimize this signal via iterative adjustment of the input
+										and output polarization (using the polarimeter). Flatness indicates that the differential signal is no
+										longer frequency dependent and 
+										by ramping
+										the laser's frequency (which creates periodic spikes in the differential signal),
+										it becomes possible to decouple the power from the frequency 
+										by iteratively adjusting the input and
+										output polarization until the normalized differential signal ∆P
+									is flat (as it was before the frequency ramping), and the sum
+									Px + Py is maximal
+										I built 
+										the polarimeter using laboratory optics and custom-machined parts, but
+										any polarimeter which separates the orthogonal components of linearly polarized  
+										light works.
+										
 									
-										This additional
-									source of birefringence can be mitigated by once again in-
-									ducing a well-defined stress, or perturbation to the fiber. One
-									common but problematic method of producing this strain is
-									via the elasto-optic (also known as fiber-squeeze) method,
-									originally outlined in Carrara, Kim & Shaw (1986)2. Yet this
-									method requires precise engineering and substantial prepara-
-									tion to create a stress that will not damage the fiber. Further,
-									the stress induced on a fiber by such a device is relatively dif-
-									ficult to characterize, potentially limiting the ability of this
-									procedure to be systematic.
 									In this paper, we describe a safe, systematic, and straight-
 									forward methodology to align the input polarization to the
 									fiber. Using a polarimeter and a frequency scan, we create a
