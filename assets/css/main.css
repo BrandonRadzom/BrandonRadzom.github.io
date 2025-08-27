@@ -2682,7 +2682,12 @@ input, select, textarea {
 				background: #242730 url("images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
-
+				.linkcls
+					{
+					   color:aqua;
+					   text-decoration: none; 
+					   background-color: none;
+					}
 				#navPanel .link {
 					display: block;
 					color: rgba(255, 255, 255, 0.5);
