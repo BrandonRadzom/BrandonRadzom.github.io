@@ -1,4 +1,4 @@
-My personal HTML website, hosted at https://brandonradzom.guthub.io
+My personal HTML website, hosted at https://brandonradzom.github.io
 
 I adopted the template Strata by HTML5 UP
 html5up.net | @ajlkn
